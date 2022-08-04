@@ -34,6 +34,15 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+## Docker
+
+```bash
+# build image
+$ docker build -t <NAME_IMAGE> .
+
+# run image
+$ docker run -d --network=host --env-file ./.env --name=<NAME_CONTAINER> <NAME_IMAGE>
+```
 
 ## Support
 
